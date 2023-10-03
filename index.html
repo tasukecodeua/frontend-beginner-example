@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kharkiv-city</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+        "
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <section class="main-page">
+      <div class="wrapper">
+        <img src="images/logo.png" alt="GOIT logo" class="goit-logo" />
+        <div class="my-city-container">
+          <h1 class="my-city-title">Харків</h1>
+
+          <p class="my-city-discription">
+            Заснований 1654 року, налічує більше 1,4 млн. українців та є одним
+            із найбільших міст України. Могутнє, світле та мальовниче, його
+            називають першою столицею та вважають науковим центром України.
+            Найбільша площа в Європі розташована саме в Харкові й має назву
+            площа Свободи. Перший в Україні аеропорт був побудований у Харкові,
+            а харківські красуні тричі ставали «Міс Україна». Місто за правом
+            вважається студентською столицею України, а Харківський національний
+            університет – один із найстаріший ВНЗ України.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-page">
+      <form action="#" class="form" id="form" netlify>
+        <h2 class="form-title">Subscribe to city news</h2>
+        <input
+          type="text"
+          class="form-field"
+          id="user-name"
+          name="User name"
+          placeholder="Name"
+        />
+        <input
+          type="email"
+          class="form-field"
+          id="user-email"
+          name="User email"
+          placeholder="Email"
+        />
+        <button class="form-submit-btn" id="form-submit-btn">Subscribe</button>
+      </form>
+    </section>
+
+    <section class="gallery-page">
+      <h2 class="gallery-title">Харків = місто студентів</h2>
+      <div class="wrapper">
+        <div class="gallery">
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="0"
+          >
+            <img src="images/1.jpg" alt="Kharkiv_photo_1" class="city-photo" />
+          </button>
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="1"
+          >
+            <img src="images/2.jpg" alt="Kharkiv_photo_2" class="city-photo" />
+          </button>
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="2"
+          >
+            <img src="images/3.jpg" alt="Kharkiv_photo_3" class="city-photo" />
+          </button>
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="3"
+          >
+            <img src="images/4.jpg" alt="Kharkiv_photo_4" class="city-photo" />
+          </button>
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="4"
+          >
+            <img src="images/5.jpg" alt="Kharkiv_photo_5" class="city-photo" />
+          </button>
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="5"
+          >
+            <img src="images/6.jpg" alt="Kharkiv_photo_6" class="city-photo" />
+          </button>
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="6"
+          >
+            <img src="images/7.jpg" alt="Kharkiv_photo_7" class="city-photo" />
+          </button>
+          <button
+            class="gallery-modal-btn"
+            data-micromodal-trigger="modal"
+            data-index="7"
+          >
+            <img src="images/8.jpg" alt="Kharkiv_photo_8" class="city-photo" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <div class="modal micromodal-slide" id="modal" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-title"
+        >
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-title">Kharkiv photos</h2>
+            <button
+              class="modal__close"
+              aria-label="Close modal"
+              data-micromodal-close
+            ></button>
+          </header>
+          <main class="modal__content" id="modal-content">
+            <div class="splide" role="group" aria-label="city-gallery">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="images/1.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="images/2.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="images/3.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="images/4.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="images/5.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="images/6.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="images/7.jpg" alt="" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="images/8.jpg" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/slider&modal.js"></script>
+  </body>
+</html>
